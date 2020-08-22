@@ -1,0 +1,33 @@
+.container {
+    width: 100vw; // viewport width
+    display: grid;
+    place-items: center;
+    height: 50vh; // viewport height
+
+    background: url("https://calaero.edu/wp-content/uploads/2018/05/Airplane-Transponder.jpg") ;
+    background-size: cover;
+
+    filter: grayscale(0);
+    transition: filter .8s;
+
+    &.bw {
+        filter: grayscale(1);
+    }
+
+    & .actionButton {
+        width: 100px;
+        height: 100px;
+        background: red;
+        border: 2px solid green;
+        border-radius: 100%;
+        padding: 10px;
+        cursor: pointer;
+
+        transition: all 0.8s;
+
+        &:hover {
+            background: blue;
+            color: goldenrod;
+        }
+    }
+}
